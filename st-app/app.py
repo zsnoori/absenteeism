@@ -10,7 +10,7 @@ from absenteeism_module import *
 def Input_Output():
     data = st.file_uploader("Upload file", type={"csv","txt"})
     if data is not None:
-        df = pd.read_csv(data.name)
+        df = pd.read_csv(data)
         st.write(df)
         model = absenteeism_model('model','scaler')
         model.load_and_clean_data(data)
