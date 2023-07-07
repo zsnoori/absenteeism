@@ -3,6 +3,7 @@
 import numpy as np
 import pandas as pd
 import pickle
+import os 
 from sklearn.preprocessing import StandardScaler
 from sklearn.base import BaseEstimator, TransformerMixin
 ###################################################################################
@@ -34,7 +35,9 @@ class absenteeism_model():
       
         def __init__(self, model_file, scaler_file):
             # read the 'model' and 'scaler' files which were saved
-            with open('model.pkl','rb') as model_file, open('scaler', 'rb') as scaler_file:
+            path = os.path.dirname(__file__)
+            model_file = path+'model'
+            with open(model_file,'rb') as model_file, open('scaler', 'rb') as scaler_file:
                 self.reg = pickle.load(model_file)
                 self.scaler = pickle.load(scaler_file)
                 self.data = None
