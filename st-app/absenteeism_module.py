@@ -48,6 +48,8 @@ class absenteeism_model():
         def load_and_clean_data(self, data_file):
             
             # import the data
+            path = os.path.dirname(__file__)
+            data_file = os.path.join(path,data_file)
             df = pd.read_csv(data_file,delimiter=',')
             # store the data in a new variable for later use
             self.df_with_predictions = df.copy()
