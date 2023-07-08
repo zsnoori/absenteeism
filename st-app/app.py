@@ -13,7 +13,7 @@ def Input_Output():
         df = pd.read_csv(data)
         st.write(df)
         model = absenteeism_model('model','scaler')
-        model.load_and_clean_data(data.name)
+        model.load_and_clean_data(df)
     result = ""
     if st.button("Click here to predict"):
         result = model.predicted_outputs()
