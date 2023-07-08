@@ -23,3 +23,4 @@ def Input_Output():
 
 if __name__ == '__main__':
     Input_Output()
+st.caption("\nzs.noori@oxinAI")
