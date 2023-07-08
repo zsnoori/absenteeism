@@ -1,6 +1,4 @@
-## absenteeism project; from data processing to implementing our model in cloud
-با تقدیم احترام خدمت تمامی فارسی زبانان. فایل‌های ویدیویی این پروژه را از طریق لیست پخش زیر و در یوتیوب مشاهده نمائید
+## Absenteeism project; from data processing to implementing our model in cloud
+This project is done based on Dr. Fozouni's course. You can find the course here:**[لیست پخش پروژه حضور و غیاب کارکنان](https://youtube.com/playlist?list=PLC6UZnripyEyZufmmIAZKGg4sPQNKUTlr)**
 
-**[لیست پخش پروژه حضور و غیاب کارکنان](https://youtube.com/playlist?list=PLC6UZnripyEyZufmmIAZKGg4sPQNKUTlr)**
-
-### final app on streamlit is here: https://absenteeism.streamlit.app/
+Final app on streamlit is here: https://absenteeism.streamlit.app/
